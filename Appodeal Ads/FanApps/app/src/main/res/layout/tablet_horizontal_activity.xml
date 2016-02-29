@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Fragments section starts here -->
+
+
+
+    <LinearLayout
+        android:id="@+id/fragments_LL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:id="@+id/drawer_fragment_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7" >
+
+            <fragment
+                android:id="@+id/drawer_fragment"
+                android:name="com.mm.fanapps.fanapps.activities.TabletFragments.DrawerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/tablet_horizontal_drawer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/other_fragment_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" >
+
+            <fragment
+                android:id="@+id/fragments_place"
+                android:name="com.mm.fanapps.fanapps.activities.TabletFragments.TabletCheatsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/tablet_horizontal_cheats"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Fragments section ends here -->
+
+
+
+</RelativeLayout>

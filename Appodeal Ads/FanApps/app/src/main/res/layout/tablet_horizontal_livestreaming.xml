@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red">
+        <Button
+            android:id="@+id/menu_button"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_menu"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/menu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/menu_button"
+            android:gravity="center"
+            android:text="LiveStreaming Games"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hor_treaminglistView"
+        />
+
+
+
+</RelativeLayout>
